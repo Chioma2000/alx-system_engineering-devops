@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir -p welcome/to/holberton Create directory welcome in current directory. Create directory to inside directory welcome. Create directory holberton inside directory to
+mkdir welcome/to/holberton
