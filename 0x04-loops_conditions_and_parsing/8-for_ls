@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-# Displays the contents of the current directory in list format.
-#   Only displays the part of the name after the first dash. 
+#
+# Display the contents of the current directory with prefixes stripped
 
-list=$(ls)
-for i in $list; do
-  echo "$i" | cut -d '-' -f2
+shopt -s nullglob
+
+for file in *
+do
+    echo "${file#*-}"
 done
-
