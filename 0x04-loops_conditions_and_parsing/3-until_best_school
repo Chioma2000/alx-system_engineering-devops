@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-#
-# Print Holberton School 10 times
+# Displays 'Best School' in stdout 10 times using the until loop
 
-i=0
-while (( i++ < 10 ))
+index=0
+
+until [ $index -eq 10 ]
 do
-    echo 'Best School'
+  echo "Best School"
+  ((index++))
 done
