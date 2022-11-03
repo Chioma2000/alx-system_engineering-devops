@@ -1,10 +1,15 @@
-Web stack debugging #3
+Webstack monitoring
 
-This was the fourth in a series of web stack debugging projects. In these projects, I was given broken/bugged webstacks in isolated containers, and tasked with fixing the web stack to a working state. For each task, I wrote a script automating the commands necessary to fix the web stack.
+This project invovled setting up Sumo Logic accounts to monitor server traffic on my three HBnB servers.
 
 Tasks 📃
 
-0. Strace is your friend
+0. Monitor your Nginx traffic
 
-0-straceisyourfriend.pp: Puppet manifest that fixes a typo error causing a WordPress application being served by an Apache web server to fail.
-Usage: puppet apply 0-straceisyourfriend.pp
+0-monitoryournginxtraffic: Text file containing my Sumo Logic access key.
+First line: Access ID
+Second line: Access Key
+
+1. Monitor your server
+
+For this task, I configured Sumo Logic to monitor my server's memory, CPU, network and disk.
